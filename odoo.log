@@ -1731,3 +1731,157 @@ View error context:
 2024-10-24 10:40:55,932 35177 DEBUG ? odoo.service.server: cron1 polling for jobs 
 2024-10-24 10:41:52,907 35177 DEBUG ? odoo.service.server: cron0 polling for jobs 
 2024-10-24 10:41:56,947 35177 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-24 10:42:52,914 35177 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-24 10:42:57,963 35177 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-24 10:43:52,918 35177 DEBUG ? odoo.service.server: cron0 polling for jobs 
+2024-10-24 10:43:58,982 35177 DEBUG ? odoo.service.server: cron1 polling for jobs 
+2024-10-24 10:44:26,706 35177 INFO project_management odoo.service.server: Initiating shutdown 
+2024-10-24 10:44:26,708 35177 INFO project_management odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-10-24 10:44:26,825 35177 DEBUG project_management odoo.service.server: current thread: <_MainThread(MainThread, started 8727675136)> 
+2024-10-24 10:44:26,829 35177 DEBUG project_management odoo.service.server: process <_MainThread(MainThread, started 8727675136)> (False) 
+2024-10-24 10:44:26,829 35177 DEBUG project_management odoo.service.server: process <Thread(odoo.service.cron.cron0, started daemon 6204436480)> (True) 
+2024-10-24 10:44:26,829 35177 DEBUG project_management odoo.service.server: process <Thread(odoo.service.cron.cron1, started daemon 6221262848)> (True) 
+2024-10-24 10:44:26,835 35177 INFO project_management odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 3 connections  
+2024-10-24 10:44:26,835 35177 DEBUG project_management odoo.service.server: -- 
+2024-10-24 11:40:40,646 54765 INFO ? odoo: Odoo version 18.0 
+2024-10-24 11:40:40,647 54765 INFO ? odoo: Using configuration file at /Users/mohammed/Desktop/assessment/odoo/odoo.conf 
+2024-10-24 11:40:40,647 54765 INFO ? odoo: addons paths: ['/Users/mohammed/Desktop/assessment/odoo/odoo/addons', '/Users/mohammed/Library/Application Support/Odoo/addons/18.0', '/Users/mohammed/Desktop/assessment/odoo/addons'] 
+2024-10-24 11:40:40,647 54765 INFO ? odoo: database: odoo@default:default 
+2024-10-24 11:40:40,647 54765 WARNING ? odoo: Python 3.13 is not officially supported, please use Python 3.12 instead 
+2024-10-24 11:40:40,664 54765 INFO ? odoo.sql_db: Connection to the database failed 
+2024-10-24 11:43:09,383 55445 INFO ? odoo: Odoo version 18.0 
+2024-10-24 11:43:09,383 55445 INFO ? odoo: Using configuration file at /Users/mohammed/Desktop/assessment/odoo/odoo.conf 
+2024-10-24 11:43:09,383 55445 INFO ? odoo: addons paths: ['/Users/mohammed/Desktop/assessment/odoo/odoo/addons', '/Users/mohammed/Library/Application Support/Odoo/addons/18.0', '/Users/mohammed/Desktop/assessment/odoo/addons'] 
+2024-10-24 11:43:09,383 55445 INFO ? odoo: database: odoo@default:default 
+2024-10-24 11:43:09,383 55445 WARNING ? odoo: Python 3.13 is not officially supported, please use Python 3.12 instead 
+2024-10-24 11:43:09,629 55445 CRITICAL ? odoo.modules.module: Couldn't load module web 
+2024-10-24 11:43:09,629 55445 ERROR ? odoo.service.server: Failed to load server-wide module `web`.
+The `web` module is provided by the addons found in the `openerp-web` project.
+Maybe you forgot to add those addons in your addons_path configuration. 
+Traceback (most recent call last):
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/service/server.py", line 1252, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/addons/web/__init__.py", line 4, in <module>
+    from . import controllers
+  File "/Users/mohammed/Desktop/assessment/odoo/addons/web/controllers/__init__.py", line 4, in <module>
+    from . import binary
+  File "/Users/mohammed/Desktop/assessment/odoo/addons/web/controllers/binary.py", line 20, in <module>
+    from odoo.addons.base.models.assetsbundle import ANY_UNIQUE
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/__init__.py", line 3, in <module>
+    from . import assetsbundle
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/assetsbundle.py", line 21, in <module>
+    from rjsmin import jsmin as rjsmin
+ModuleNotFoundError: No module named 'rjsmin'
+2024-10-24 11:43:09,635 55445 CRITICAL ? odoo.modules.module: Couldn't load module base 
+2024-10-24 11:43:09,635 55445 ERROR ? odoo.service.server: Failed to load server-wide module `base`. 
+Traceback (most recent call last):
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/service/server.py", line 1252, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/__init__.py", line 3, in <module>
+    from . import assetsbundle
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/assetsbundle.py", line 21, in <module>
+    from rjsmin import jsmin as rjsmin
+ModuleNotFoundError: No module named 'rjsmin'
+2024-10-24 11:43:09,815 55445 INFO ? odoo.service.server: HTTP service (werkzeug) running on 1.0.0.127.in-addr.arpa:8069 
+2024-10-24 11:43:09,833 55445 INFO ? odoo.modules.loading: init db 
+2024-10-24 11:43:10,945 55445 INFO project_management odoo.modules.loading: loading 1 modules... 
+2024-10-24 11:43:10,945 55445 INFO project_management odoo.modules.loading: Loading module base (1/1) 
+2024-10-24 11:43:10,946 55445 CRITICAL project_management odoo.modules.module: Couldn't load module base 
+2024-10-24 11:43:10,958 55445 INFO project_management odoo.modules.loading: skipping reset_modules_state, ir_module_module table does not exists 
+2024-10-24 11:43:10,959 55445 ERROR project_management odoo.modules.registry: Failed to load registry 
+2024-10-24 11:43:10,959 55445 CRITICAL project_management odoo.service.server: Failed to initialize database `project_management`. 
+Traceback (most recent call last):
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/service/server.py", line 1305, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+  File "/Users/mohammed/Desktop/assessment/odoo-venv/lib/python3.13/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/registry.py", line 131, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/loading.py", line 421, in load_modules
+    loaded_modules, processed_modules = load_module_graph(
+                                        ~~~~~~~~~~~~~~~~~^
+        env, graph, status, perform_checks=update_module,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        report=report, models_to_check=models_to_check)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/loading.py", line 184, in load_module_graph
+    load_openerp_module(package.name)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/__init__.py", line 3, in <module>
+    from . import assetsbundle
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/assetsbundle.py", line 21, in <module>
+    from rjsmin import jsmin as rjsmin
+ModuleNotFoundError: No module named 'rjsmin'
+2024-10-24 11:43:45,309 55445 INFO project_management odoo.service.server: Initiating shutdown 
+2024-10-24 11:43:45,311 55445 INFO project_management odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-10-24 11:43:45,393 55445 INFO project_management odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections  
+2024-10-24 11:44:08,226 55794 INFO ? odoo: Odoo version 18.0 
+2024-10-24 11:44:08,227 55794 INFO ? odoo: Using configuration file at /Users/mohammed/Desktop/assessment/odoo/odoo.conf 
+2024-10-24 11:44:08,227 55794 INFO ? odoo: addons paths: ['/Users/mohammed/Desktop/assessment/odoo/odoo/addons', '/Users/mohammed/Library/Application Support/Odoo/addons/18.0', '/Users/mohammed/Desktop/assessment/odoo/addons'] 
+2024-10-24 11:44:08,227 55794 INFO ? odoo: database: odoo@default:default 
+2024-10-24 11:44:08,227 55794 WARNING ? odoo: Python 3.13 is not officially supported, please use Python 3.12 instead 
+2024-10-24 11:44:08,791 55794 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-10-24 11:44:11,659 55794 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2024-10-24 11:44:13,523 55794 CRITICAL ? odoo.modules.module: Couldn't load module base 
+2024-10-24 11:44:13,524 55794 ERROR ? odoo.service.server: Failed to load server-wide module `base`. 
+Traceback (most recent call last):
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/service/server.py", line 1252, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/__init__.py", line 22, in <module>
+    from . import ir_mail_server
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/ir_mail_server.py", line 16, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2024-10-24 11:44:13,530 55794 CRITICAL ? odoo.modules.module: Couldn't load module web 
+2024-10-24 11:44:13,530 55794 ERROR ? odoo.service.server: Failed to load server-wide module `web`.
+The `web` module is provided by the addons found in the `openerp-web` project.
+Maybe you forgot to add those addons in your addons_path configuration. 
+Traceback (most recent call last):
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/service/server.py", line 1252, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+    ~~~~~~~~~~^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/addons/web/__init__.py", line 4, in <module>
+    from . import controllers
+  File "/Users/mohammed/Desktop/assessment/odoo/addons/web/controllers/__init__.py", line 5, in <module>
+    from . import database
+  File "/Users/mohammed/Desktop/assessment/odoo/addons/web/controllers/database.py", line 19, in <module>
+    from odoo.addons.base.models.ir_qweb import render as qweb_render
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/__init__.py", line 5, in <module>
+    from . import models
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/__init__.py", line 22, in <module>
+    from . import ir_mail_server
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/ir_mail_server.py", line 16, in <module>
+    from OpenSSL import crypto as SSLCrypto
+ModuleNotFoundError: No module named 'OpenSSL'
+2024-10-24 11:44:13,535 55794 INFO ? odoo.service.server: HTTP service (werkzeug) running on 1.0.0.127.in-addr.arpa:8069 
+2024-10-24 11:44:13,556 55794 ERROR ? odoo.modules.loading: Database project_management not initialized, you can force it with `-i base` 
+2024-10-24 11:44:13,556 55794 INFO ? odoo.modules.registry: Registry loaded in 0.020s 
