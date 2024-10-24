@@ -1,0 +1,194 @@
+2024-10-24 10:34:53,316 34325 INFO ? odoo: Odoo version 18.0 
+2024-10-24 10:34:53,316 34325 INFO ? odoo: Using configuration file at /Users/mohammed/Desktop/assessment/odoo/odoo.conf 
+2024-10-24 10:34:53,316 34325 INFO ? odoo: addons paths: ['/Users/mohammed/Desktop/assessment/odoo/odoo/addons', '/Users/mohammed/Library/Application Support/Odoo/addons/18.0', '/Users/mohammed/Desktop/assessment/odoo/addons'] 
+2024-10-24 10:34:53,316 34325 INFO ? odoo: database: odoo@default:default 
+2024-10-24 10:34:53,316 34325 WARNING ? odoo: Python 3.13 is not officially supported, please use Python 3.12 instead 
+2024-10-24 10:34:53,409 34325 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-10-24 10:34:53,455 34325 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2024-10-24 10:34:53,776 34325 INFO ? odoo.service.server: HTTP service (werkzeug) running on 1.0.0.127.in-addr.arpa:8069 
+2024-10-24 10:34:53,796 34325 INFO ? odoo.modules.loading: init db 
+2024-10-24 10:34:54,721 34325 INFO project_management odoo.modules.loading: loading 1 modules... 
+2024-10-24 10:34:54,721 34325 INFO project_management odoo.modules.loading: Loading module base (1/1) 
+2024-10-24 10:34:54,735 34325 INFO project_management odoo.modules.registry: module base: creating or updating database tables 
+2024-10-24 10:34:54,898 34325 INFO project_management odoo.models: Prepare computation of ir.module.module.menus_by_module 
+2024-10-24 10:34:54,898 34325 INFO project_management odoo.models: Prepare computation of ir.module.module.reports_by_module 
+2024-10-24 10:34:54,898 34325 INFO project_management odoo.models: Prepare computation of ir.module.module.views_by_module 
+2024-10-24 10:34:54,936 34325 INFO project_management odoo.models: Prepare computation of res.partner.user_id 
+2024-10-24 10:34:54,936 34325 INFO project_management odoo.models: Prepare computation of res.partner.commercial_partner_id 
+2024-10-24 10:34:54,936 34325 INFO project_management odoo.models: Prepare computation of res.partner.complete_name 
+2024-10-24 10:34:54,936 34325 INFO project_management odoo.models: Prepare computation of res.partner.company_registry 
+2024-10-24 10:34:54,936 34325 INFO project_management odoo.models: Prepare computation of res.partner.commercial_company_name 
+2024-10-24 10:34:54,936 34325 INFO project_management odoo.models: Prepare computation of res.partner.partner_share 
+2024-10-24 10:34:54,948 34325 INFO project_management odoo.models: Prepare computation of res.currency.decimal_places 
+2024-10-24 10:34:54,957 34325 INFO project_management odoo.models: Prepare computation of res.company.uses_default_logo 
+2024-10-24 10:34:54,957 34325 INFO project_management odoo.models: Prepare computation of res.company.logo_web 
+2024-10-24 10:34:54,958 34325 INFO project_management odoo.models: Computing parent_path for table res_company... 
+2024-10-24 10:34:54,967 34325 INFO project_management odoo.models: Prepare computation of res.users.signature 
+2024-10-24 10:34:54,967 34325 INFO project_management odoo.models: Prepare computation of res.users.share 
+2024-10-24 10:34:55,170 34325 WARNING project_management py.warnings: /Users/mohammed/Desktop/assessment/odoo/odoo/tools/mail.py:224: DeprecationWarning: 'count' is passed as positional argument
+  File "/Users/mohammed/Desktop/assessment/odoo/./odoo-bin", line 8, in <module>
+    odoo.cli.main()
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/cli/server.py", line 173, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/service/server.py", line 1401, in start
+    rc = server.run(preload, stop)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/service/server.py", line 577, in run
+    rc = preload_registries(preload)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/service/server.py", line 1305, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo-venv/lib/python3.13/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/registry.py", line 131, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/loading.py", line 421, in load_modules
+    loaded_modules, processed_modules = load_module_graph(
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/loading.py", line 204, in load_module_graph
+    registry.init_models(env.cr, model_names, {'module': package.name}, new_install)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/registry.py", line 618, in init_models
+    func()
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/ir_model.py", line 1988, in _reflect_relation
+    self.env.invalidate_all()
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/api.py", line 821, in invalidate_all
+    self.flush_all()
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/api.py", line 831, in flush_all
+    self._recompute_all()
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/api.py", line 827, in _recompute_all
+    self[field.model_name]._recompute_field(field)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/models.py", line 7258, in _recompute_field
+    field.recompute(records)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/fields.py", line 1447, in recompute
+    apply_except_missing(self.compute_value, recs)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/fields.py", line 1420, in apply_except_missing
+    func(records)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/fields.py", line 1469, in compute_value
+    records._compute_field_value(self)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/models.py", line 5217, in _compute_field_value
+    fields.determine(field.compute, self)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/fields.py", line 109, in determine
+    return needle(*args)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/res_users.py", line 527, in _compute_signature
+    user.signature = Markup('<p>--<br />%s</p>') % user['name']
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/fields.py", line 1382, in __set__
+    self.write(protected_records, value)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/fields.py", line 1903, in write
+    super().write(records, value)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/fields.py", line 1201, in write
+    cache_value = self.convert_to_cache(value, records)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/fields.py", line 2113, in convert_to_cache
+    return self._convert(value, record, validate)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/fields.py", line 2174, in _convert
+    return html_sanitize(value, **sanitize_vals)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/tools/mail.py", line 300, in html_sanitize
+    sanitized = html_normalize(src, filter_callback=sanitize_handler)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/tools/mail.py", line 224, in html_normalize
+    src = re.sub(r'(<[^>]*\s)(encoding=(["\'][^"\']*?["\']|[^\s\n\r>]+)(\s[^>]*|/)?>)', "", src, re.IGNORECASE | re.DOTALL)
+ 
+2024-10-24 10:34:55,528 34325 WARNING project_management py.warnings: /Users/mohammed/Desktop/assessment/odoo/odoo/tools/mail.py:224: DeprecationWarning: 'count' is passed as positional argument
+  File "/Users/mohammed/Desktop/assessment/odoo/./odoo-bin", line 8, in <module>
+    odoo.cli.main()
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/cli/command.py", line 66, in main
+    o.run(args)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/cli/server.py", line 180, in run
+    main(args)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/cli/server.py", line 173, in main
+    rc = odoo.service.server.start(preload=preload, stop=stop)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/service/server.py", line 1401, in start
+    rc = server.run(preload, stop)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/service/server.py", line 577, in run
+    rc = preload_registries(preload)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/service/server.py", line 1305, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo-venv/lib/python3.13/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/registry.py", line 131, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/loading.py", line 421, in load_modules
+    loaded_modules, processed_modules = load_module_graph(
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/loading.py", line 221, in load_module_graph
+    module._check()
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/ir_module.py", line 869, in _check
+    if not module.description_html:
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/fields.py", line 1287, in __get__
+    self.compute_value(recs)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/fields.py", line 1469, in compute_value
+    records._compute_field_value(self)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/models.py", line 5217, in _compute_field_value
+    fields.determine(field.compute, self)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/fields.py", line 109, in determine
+    return needle(*args)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/models/ir_module.py", line 209, in _get_desc
+    module.description_html = tools.html_sanitize(output)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/tools/mail.py", line 300, in html_sanitize
+    sanitized = html_normalize(src, filter_callback=sanitize_handler)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/tools/mail.py", line 224, in html_normalize
+    src = re.sub(r'(<[^>]*\s)(encoding=(["\'][^"\']*?["\']|[^\s\n\r>]+)(\s[^>]*|/)?>)', "", src, re.IGNORECASE | re.DOTALL)
+ 
+2024-10-24 10:34:55,529 34325 INFO project_management odoo.modules.loading: loading base/data/res_bank.xml 
+2024-10-24 10:34:55,534 34325 INFO project_management odoo.modules.loading: loading base/data/res.lang.csv 
+2024-10-24 10:34:55,557 34325 INFO project_management odoo.modules.loading: loading base/data/res_lang_data.xml 
+2024-10-24 10:34:55,575 34325 INFO project_management odoo.modules.loading: loading base/data/res_partner_data.xml 
+2024-10-24 10:34:55,593 34325 INFO project_management odoo.modules.loading: loading base/data/res_currency_data.xml 
+2024-10-24 10:34:55,728 34325 INFO project_management odoo.modules.loading: loading base/data/res_company_data.xml 
+2024-10-24 10:34:55,732 34325 INFO project_management odoo.modules.loading: loading base/data/res_users_data.xml 
+2024-10-24 10:34:56,312 34325 INFO project_management odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2024-10-24 10:34:56,321 34325 INFO project_management odoo.modules.loading: loading base/data/res_country_data.xml 
+2024-10-24 10:34:56,468 34325 INFO project_management odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2024-10-24 10:34:56,473 34325 INFO project_management odoo.modules.loading: loading base/security/base_groups.xml 
+2024-10-24 10:34:56,583 34325 INFO project_management odoo.modules.loading: loading base/security/base_security.xml 
+2024-10-24 10:34:56,629 34325 INFO project_management odoo.modules.loading: loading base/views/base_menus.xml 
+2024-10-24 10:34:56,649 34325 INFO project_management odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2024-10-24 10:34:56,656 34325 INFO project_management odoo.modules.loading: loading base/views/res_config_views.xml 
+2024-10-24 10:34:56,658 34325 INFO project_management odoo.modules.loading: loading base/data/res.country.state.csv 
+2024-10-24 10:34:57,000 34325 INFO project_management odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2024-10-24 10:34:57,234 34325 INFO project_management odoo.modules.loading: skipping reset_modules_state, ir_module_module table does not exists 
+2024-10-24 10:34:57,234 34325 ERROR project_management odoo.modules.registry: Failed to load registry 
+2024-10-24 10:34:57,234 34325 CRITICAL project_management odoo.service.server: Failed to initialize database `project_management`. 
+Traceback (most recent call last):
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/service/server.py", line 1305, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo-venv/lib/python3.13/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/registry.py", line 131, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/loading.py", line 421, in load_modules
+    loaded_modules, processed_modules = load_module_graph(
+                                        ~~~~~~~~~~~~~~~~~^
+        env, graph, status, perform_checks=update_module,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        report=report, models_to_check=models_to_check)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/loading.py", line 226, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/modules/loading.py", line 70, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/tools/convert.py", line 608, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/tools/convert.py", line 679, in convert_xml_import
+    obj.parse(doc.getroot())
+    ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/tools/convert.py", line 594, in parse
+    self._tag_root(de)
+    ~~~~~~~~~~~~~~^^^^
+  File "/Users/mohammed/Desktop/assessment/odoo/odoo/tools/convert.py", line 548, in _tag_root
+    raise ParseError(msg) from None  # Restart with "--log-handler odoo.tools.convert:DEBUG" for complete traceback
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+odoo.tools.convert.ParseError: while parsing /Users/mohammed/Desktop/assessment/odoo/odoo/addons/base/views/ir_actions_views.xml:584
+forbidden opcode(s) in "config = model.next() or {}\nif config.get('type') not in ('ir.actions.act_window_close',):\n    action = config": TO_BOOL
+
+View error context:
+'-no context-'
+
